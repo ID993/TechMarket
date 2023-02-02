@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Images</title>
+
+<!--    <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">-->
+<!--        <td><img th:src="@{'~/uploads/' + ${image}}" alt="Sample image" width="250" height="250"></td>-->
+<!--    </div>-->
+
+
+    <div>
+    <tr th:each="image: ${images}">
+        <img th:src="@{'images/'+${image}}" alt="sample" width="250" height="250"/>
+    </tr>
+    </div>
+
+</head>
+<body>
+
+</body>
+</html>
+
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en" xmlns:th="http://www.thymeleaf.org">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Error</title>-->
+
+<!--</head>-->
+<!--<body>-->
+<!--<h1> Oops... Sorry about this. </h1>-->
+<!--<p th:utext="${errorMessage}"></p>-->
+<!--<p><i>That's all we know</i></p>-->
+<!--</body>-->
+<!--</html>-->

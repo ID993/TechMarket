@@ -1,0 +1,11 @@
+ALTER TABLE ad
+    DROP CONSTRAINT fk_ad_bid,
+    DROP COLUMN bid_id,
+    DROP CONSTRAINT fk_ad_user,
+    ADD CONSTRAINT fk_ad_user FOREIGN KEY (user_id) REFERENCES users (user_id) ON DELETE CASCADE ON UPDATE CASCADE;
+
+DROP TABLE bid;
+
+ALTER TABLE alarm
+    DROP CONSTRAINT fk_alarm_user,
+    ADD CONSTRAINT fk_alarm_user FOREIGN KEY (user_id) REFERENCES users (user_id) ON DELETE CASCADE ON UPDATE CASCADE;

@@ -1,0 +1,3 @@
+ALTER TABLE keyword
+DROP COLUMN keyword,
+ADD COLUMN name VARCHAR(255);

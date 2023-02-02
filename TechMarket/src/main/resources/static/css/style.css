@@ -1,0 +1,53 @@
+.flex-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.box {
+    border: 1px solid #fbfbfb;
+    padding: 5px;
+    color: #fbfbfb;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.box:hover {
+    color: #a58b8b;
+}
+
+.right-row {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+    margin-bottom: -100px;
+    margin-right: 145px;
+
+}
+
+.box-right-row {
+    border: 1px solid dimgrey;
+    padding: 5px;
+    color: grey;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.box-right-row:hover {
+    color: black;
+}
+
+.card-padding {
+    padding: 30px 20px;
+}
+
+.form-max-h {
+    max-height: 500px;
+}
+

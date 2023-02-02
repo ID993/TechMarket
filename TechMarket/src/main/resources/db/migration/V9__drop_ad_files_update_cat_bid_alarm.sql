@@ -1,0 +1,2 @@
+DROP TABLE ad_files CASCADE;
+
